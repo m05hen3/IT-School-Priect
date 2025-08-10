@@ -41,8 +41,8 @@ Acest proiect este o platforma de tip DevOps pentru monitorizarea starii unui si
 
 1. **Clonare repository**
     ```bash
-        git clone https://github.com/m05hen3/IT-School-Priect.git
-        cd IT-School-Priect
+    git clone https://github.com/m05hen3/IT-School-Priect.git
+    cd IT-School-Priect
     ```
     
 2. **Rulare locala manuala (pentru testare rapida)**
@@ -102,7 +102,7 @@ Acest proiect este o platforma de tip DevOps pentru monitorizarea starii unui si
 
 ### Structura proiectuluidocker compose down
 
-```
+```plaintext
 IT-School-Priect/
 |__ devops-monitoring/
     |__ ansible/
@@ -131,9 +131,11 @@ IT-School-Priect/
 
 ### Tehnologii utilizate:
 
+```plaintext
     - **Bash** - scriptul de monitorizare (monitor.sh)
     - **Python** - scriptul de backup (backup.py)
     - **GIT** - Versionare
     - **Docker & Docker Compose** - Containerizarea si orchestrarea serviciilor
+```
 
 ---
