@@ -1,0 +1,24 @@
+services:
+  monitor:
+    build:
+      context: .
+      dockerfile: docker/monitor/Dockerfile
+    container_name: monitor-container
+    environment:
+      - INTERVAL=2
+    volumes:
+      - ./system-state.log:/app/system-state.log
+    restart: unless-stopped
+
+  backup:
+    build:
+      context: .
+      dockerfile: docker/backup/Dockerfile
+    container_name: backup-container
+    environment:
+      - BACKUP_INTERVAL=3
+      - BACKUP_DIR=/app/backup
+    volumes:
+      - ./system-state.log:/app/system-state.log
+      - ./backup:/backup
+    restart: unless-stopped

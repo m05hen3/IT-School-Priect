@@ -1,0 +1,9 @@
+#IP-ul masinii remote
+remote_host: "199.199.199.199"
+
+# Host SSH username
+remote_user: "nume_utilizator"
+
+# SSH private key (pe masina locala)
+remote_key_path: "~/.ssh/id_rsa"
+
