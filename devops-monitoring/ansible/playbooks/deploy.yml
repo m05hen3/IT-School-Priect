@@ -1,0 +1,23 @@
+- name: Deploy DevOps Monitoring Platform
+  hosts: remote
+  become: true
+
+  tasks:
+    - name: Create project directory
+      file:
+        path: /opt/devops_monitoring
+        state: directory
+        mode: '0755'
+
+    - name: Copy scripts files to remote
+      copy:
+        src: "{{ playbook_dir }}/../../"
+        dest: /opt/devops_monitoring/
+        owner: root
+        group: root
+        mode: '0644'
+      
+    - name: Run docker-compose up
+      command: docker compose up -d
+      args:
+        chdir: /opt/devops_monitoring/docker

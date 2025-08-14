@@ -91,11 +91,11 @@ Acest proiect este o platforma de tip DevOps pentru monitorizarea starii unui si
     ```
     - Instalare Docker pe remote:
     ```bash
-    ansible-playbook -i inventory.ini install-docker.yml
+    ansible-playbook -i inventory.ini playbooks/install-docker.yml
     ```
     - Deploy platforma pe remote:
     ```bash
-    ansible-playbook -i inventory.ini deploy.yml
+    ansible-playbook -i inventory.ini playbooks/deploy.yml
     ```
 
 ---
