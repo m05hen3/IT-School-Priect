@@ -106,9 +106,10 @@ Acest proiect este o platforma de tip DevOps pentru monitorizarea starii unui si
 IT-School-Priect/
 |__ devops-monitoring/
     |__ ansible/
-    |   |__ deploy.yml
+    |   |__ playbooks/
+    |   |   |__ deploy.yml
+    |   |   |__ install-docker.yml
     |   |__ generate_inventory.py
-    |   |__ install-docker.yml
     |   |__ inventory.ini
     |   |__ vars.yml
     |__ backup/                     # Directorul unde se salveaza backup-urile
