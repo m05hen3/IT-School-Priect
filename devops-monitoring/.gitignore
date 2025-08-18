@@ -1,9 +1,6 @@
 # Loguri generate
 system-state.log
 
-# Director backup
-backup/
-
 # Python cace
 __pycache__/
 *.pyc
